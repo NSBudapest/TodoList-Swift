@@ -8,7 +8,7 @@
 
 import XCTest
 
-class TodoViewUITests: XCTestCase {
+class TodoViewKIFTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
