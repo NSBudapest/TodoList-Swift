@@ -8,20 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		02D9567E1CAE7D0600C627EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D9567D1CAE7D0600C627EE /* AppDelegate.swift */; };
-		02D956801CAE7D0600C627EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D9567F1CAE7D0600C627EE /* ViewController.swift */; };
 		02D956831CAE7D0600C627EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D956811CAE7D0600C627EE /* Main.storyboard */; };
 		02D956851CAE7D0600C627EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02D956841CAE7D0600C627EE /* Assets.xcassets */; };
 		02D956881CAE7D0600C627EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02D956861CAE7D0600C627EE /* LaunchScreen.storyboard */; };
+		02D956921CAE84E200C627EE /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D956911CAE84E200C627EE /* TodoListViewController.swift */; };
+		02D956941CAE852600C627EE /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D956931CAE852600C627EE /* TodoViewController.swift */; };
+		02D956A51CAE861C00C627EE /* KIFExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D956A41CAE861C00C627EE /* KIFExtensions.swift */; };
+		02D956A81CAE866A00C627EE /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D956A71CAE866A00C627EE /* KIF.framework */; };
+		02D956AA1CAE86AC00C627EE /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D956A71CAE866A00C627EE /* KIF.framework */; };
+		02D956AD1CAE874000C627EE /* TodoTableViewKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D956AC1CAE874000C627EE /* TodoTableViewKIFTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02D9569E1CAE85D800C627EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02D956721CAE7D0600C627EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02D956791CAE7D0600C627EE;
+			remoteInfo = TodoList;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02D9567A1CAE7D0600C627EE /* TodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02D9567D1CAE7D0600C627EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		02D9567F1CAE7D0600C627EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		02D956821CAE7D0600C627EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		02D956841CAE7D0600C627EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02D956871CAE7D0600C627EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		02D956891CAE7D0600C627EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D956911CAE84E200C627EE /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		02D956931CAE852600C627EE /* TodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
+		02D956991CAE85D800C627EE /* TodoListKIFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoListKIFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02D9569D1CAE85D800C627EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02D956A31CAE861B00C627EE /* TodoListKIFTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TodoListKIFTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		02D956A41CAE861C00C627EE /* KIFExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFExtensions.swift; sourceTree = "<group>"; };
+		02D956A71CAE866A00C627EE /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = Carthage/Build/iOS/KIF.framework; sourceTree = "<group>"; };
+		02D956AC1CAE874000C627EE /* TodoTableViewKIFTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewKIFTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +51,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D956AA1CAE86AC00C627EE /* KIF.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02D956961CAE85D800C627EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D956A81CAE866A00C627EE /* KIF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +70,8 @@
 			isa = PBXGroup;
 			children = (
 				02D9567C1CAE7D0600C627EE /* TodoList */,
+				02D9569A1CAE85D800C627EE /* TodoListKIFTests */,
+				02D956A61CAE865F00C627EE /* Frameworks */,
 				02D9567B1CAE7D0600C627EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				02D9567A1CAE7D0600C627EE /* TodoList.app */,
+				02D956991CAE85D800C627EE /* TodoListKIFTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +89,33 @@
 			isa = PBXGroup;
 			children = (
 				02D9567D1CAE7D0600C627EE /* AppDelegate.swift */,
-				02D9567F1CAE7D0600C627EE /* ViewController.swift */,
-				02D956811CAE7D0600C627EE /* Main.storyboard */,
+				02D956911CAE84E200C627EE /* TodoListViewController.swift */,
+				02D956931CAE852600C627EE /* TodoViewController.swift */,
 				02D956841CAE7D0600C627EE /* Assets.xcassets */,
+				02D956811CAE7D0600C627EE /* Main.storyboard */,
 				02D956861CAE7D0600C627EE /* LaunchScreen.storyboard */,
 				02D956891CAE7D0600C627EE /* Info.plist */,
 			);
 			path = TodoList;
+			sourceTree = "<group>";
+		};
+		02D9569A1CAE85D800C627EE /* TodoListKIFTests */ = {
+			isa = PBXGroup;
+			children = (
+				02D956A41CAE861C00C627EE /* KIFExtensions.swift */,
+				02D9569D1CAE85D800C627EE /* Info.plist */,
+				02D956A31CAE861B00C627EE /* TodoListKIFTests-Bridging-Header.h */,
+				02D956AC1CAE874000C627EE /* TodoTableViewKIFTests.swift */,
+			);
+			path = TodoListKIFTests;
+			sourceTree = "<group>";
+		};
+		02D956A61CAE865F00C627EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02D956A71CAE866A00C627EE /* KIF.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +128,7 @@
 				02D956761CAE7D0600C627EE /* Sources */,
 				02D956771CAE7D0600C627EE /* Frameworks */,
 				02D956781CAE7D0600C627EE /* Resources */,
+				02D956AB1CAE86B000C627EE /* Copy Carthage frameworks */,
 			);
 			buildRules = (
 			);
@@ -83,6 +138,25 @@
 			productName = TodoList;
 			productReference = 02D9567A1CAE7D0600C627EE /* TodoList.app */;
 			productType = "com.apple.product-type.application";
+		};
+		02D956981CAE85D800C627EE /* TodoListKIFTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02D956A01CAE85D800C627EE /* Build configuration list for PBXNativeTarget "TodoListKIFTests" */;
+			buildPhases = (
+				02D956951CAE85D800C627EE /* Sources */,
+				02D956961CAE85D800C627EE /* Frameworks */,
+				02D956971CAE85D800C627EE /* Resources */,
+				02D956A91CAE866F00C627EE /* Copy Carthage frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02D9569F1CAE85D800C627EE /* PBXTargetDependency */,
+			);
+			name = TodoListKIFTests;
+			productName = TodoListKIFTests;
+			productReference = 02D956991CAE85D800C627EE /* TodoListKIFTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -96,6 +170,10 @@
 				TargetAttributes = {
 					02D956791CAE7D0600C627EE = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					02D956981CAE85D800C627EE = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 02D956791CAE7D0600C627EE;
 					};
 				};
 			};
@@ -113,6 +191,7 @@
 			projectRoot = "";
 			targets = (
 				02D956791CAE7D0600C627EE /* TodoList */,
+				02D956981CAE85D800C627EE /* TodoListKIFTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,19 +207,77 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02D956971CAE85D800C627EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02D956A91CAE866F00C627EE /* Copy Carthage frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/KIF.framework",
+			);
+			name = "Copy Carthage frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		02D956AB1CAE86B000C627EE /* Copy Carthage frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/KIF.framework",
+			);
+			name = "Copy Carthage frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		02D956761CAE7D0600C627EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02D956801CAE7D0600C627EE /* ViewController.swift in Sources */,
+				02D956921CAE84E200C627EE /* TodoListViewController.swift in Sources */,
+				02D956941CAE852600C627EE /* TodoViewController.swift in Sources */,
 				02D9567E1CAE7D0600C627EE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		02D956951CAE85D800C627EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02D956AD1CAE874000C627EE /* TodoTableViewKIFTests.swift in Sources */,
+				02D956A51CAE861C00C627EE /* KIFExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02D9569F1CAE85D800C627EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02D956791CAE7D0600C627EE /* TodoList */;
+			targetProxy = 02D9569E1CAE85D800C627EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		02D956811CAE7D0600C627EE /* Main.storyboard */ = {
@@ -249,6 +386,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TodoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nsbudapest.TodoList;
@@ -260,10 +401,51 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TodoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nsbudapest.TodoList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		02D956A11CAE85D800C627EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TodoListKIFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsbudapest.TodoListKIFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoListKIFTests/TodoListKIFTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoList.app/TodoList";
+			};
+			name = Debug;
+		};
+		02D956A21CAE85D800C627EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = TodoListKIFTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsbudapest.TodoListKIFTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TodoListKIFTests/TodoListKIFTests-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TodoList.app/TodoList";
 			};
 			name = Release;
 		};
@@ -284,6 +466,15 @@
 			buildConfigurations = (
 				02D9568D1CAE7D0600C627EE /* Debug */,
 				02D9568E1CAE7D0600C627EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02D956A01CAE85D800C627EE /* Build configuration list for PBXNativeTarget "TodoListKIFTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02D956A11CAE85D800C627EE /* Debug */,
+				02D956A21CAE85D800C627EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
