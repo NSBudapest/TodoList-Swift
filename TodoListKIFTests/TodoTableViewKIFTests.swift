@@ -36,7 +36,7 @@ class TodoTableViewUITests: XCTestCase {
     
     func testSwipe() {
         // This test should:
-        // 1. Delete with swipe the 10th element in the list
+        // 1. Delete with swipe the 10th element in the list and see it's not there anymore
     }
     
 }
