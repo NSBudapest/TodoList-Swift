@@ -6,7 +6,7 @@ Start with forking this repository to make sure you have your own version.
 
 ## Install
 
-Use Carthage for updating dependencies. If you don't have Carthage installed on your machine, run:
+Use Carthage for updating dependencies. If you don't have [Carthage](https://github.com/Carthage/Carthage) installed on your machine, run:
 
 `brew update && brew install carthage`
 
