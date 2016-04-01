@@ -17,6 +17,7 @@
 		02D956A81CAE866A00C627EE /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D956A71CAE866A00C627EE /* KIF.framework */; };
 		02D956AA1CAE86AC00C627EE /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D956A71CAE866A00C627EE /* KIF.framework */; };
 		02D956AD1CAE874000C627EE /* TodoTableViewKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D956AC1CAE874000C627EE /* TodoTableViewKIFTests.swift */; };
+		02D956AF1CAE89AD00C627EE /* TodoViewKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D956AE1CAE89AD00C627EE /* TodoViewKIFTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		02D956A41CAE861C00C627EE /* KIFExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFExtensions.swift; sourceTree = "<group>"; };
 		02D956A71CAE866A00C627EE /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = Carthage/Build/iOS/KIF.framework; sourceTree = "<group>"; };
 		02D956AC1CAE874000C627EE /* TodoTableViewKIFTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoTableViewKIFTests.swift; sourceTree = "<group>"; };
+		02D956AE1CAE89AD00C627EE /* TodoViewKIFTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoViewKIFTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				02D9569D1CAE85D800C627EE /* Info.plist */,
 				02D956A31CAE861B00C627EE /* TodoListKIFTests-Bridging-Header.h */,
 				02D956AC1CAE874000C627EE /* TodoTableViewKIFTests.swift */,
+				02D956AE1CAE89AD00C627EE /* TodoViewKIFTests.swift */,
 			);
 			path = TodoListKIFTests;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D956AF1CAE89AD00C627EE /* TodoViewKIFTests.swift in Sources */,
 				02D956AD1CAE874000C627EE /* TodoTableViewKIFTests.swift in Sources */,
 				02D956A51CAE861C00C627EE /* KIFExtensions.swift in Sources */,
 			);
