@@ -11,13 +11,24 @@
 #import <dlfcn.h>
 
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 90000
+@protocol XCTestObservation <NSObject>
+@end
+
+@interface XCTestObservationCenter : NSObject
++ (XCTestObservationCenter *)sharedTestObservationCenter;
+- (void)addTestObserver:(id <XCTestObservation>)testObserver;
+@end
+#endif
+
+
 @interface AccessibilitySettingsController
 - (void)setAXInspectorEnabled:(NSNumber*)enabled specifier:(id)specifier;
 - (NSNumber *)AXInspectorEnabled:(id)specifier;
 @end
 
 
-@interface KIFAccessibilityEnabler ()
+@interface KIFAccessibilityEnabler () <XCTestObservation>
 
 @property (nonatomic, strong) id axSettingPrefController;
 @property (nonatomic, strong) NSNumber *initialAccessibilityInspectorSetting;
@@ -26,6 +37,18 @@
 
 
 @implementation KIFAccessibilityEnabler
+
++ (void)load
+{
+    @autoreleasepool {
+        if ([XCTestObservationCenter respondsToSelector:@selector(sharedTestObservationCenter)]) {
+            XCTestObservationCenter *observationCenter = [XCTestObservationCenter sharedTestObservationCenter];
+            [observationCenter addTestObserver:[self sharedAccessibilityEnabler]];
+        } else {
+            [[self sharedAccessibilityEnabler] _enableAccessibility];
+        }
+    }
+}
 
 + (instancetype)sharedAccessibilityEnabler
 {
@@ -38,7 +61,7 @@
     return _sharedAccessibilityEnabler;
 }
 
-- (void)enableAccessibility
+- (void)_enableAccessibility
 {
     NSDictionary *environment = [[NSProcessInfo processInfo] environment];
     NSString *simulatorRoot = [environment objectForKey:@"IPHONE_SIMULATOR_ROOT"];
@@ -81,12 +104,14 @@
     [self.axSettingPrefController setAXInspectorEnabled:self.initialAccessibilityInspectorSetting specifier:nil];
 }
 
-@end
-
-void ResetAccessibilityInspector(void);
-
-// It appears that if you register as a test observer too late, then you don't get the testBundleDidFinish: method called, so instead we use this is a workaround. This is also works well for test envs that don't have XCTestObservation
-__attribute__((destructor))
-void ResetAccessibilityInspector() {
-  [[KIFAccessibilityEnabler sharedAccessibilityEnabler] _resetAccessibilityInspector];
+- (void)testBundleWillStart:(NSBundle *)testBundle
+{
+    [self _enableAccessibility];
 }
+
+- (void)testBundleDidFinish:(NSBundle *)testBundle
+{
+    [self _resetAccessibilityInspector];
+}
+
+@end

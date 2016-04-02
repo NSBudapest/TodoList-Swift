@@ -61,9 +61,8 @@
             }
             description = [description stringByAppendingString:predicate.kifPredicateDescription];
         }
-        if (description.length > 0) {
-            return description;
-        }
+        
+        return description;
     }
     
     return self.description;

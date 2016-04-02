@@ -241,7 +241,7 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/myfile$(SRCROOT)/Carthage/Build/iOS/KIF.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KIF.framework",
 			);
 			name = "DONT DO THIS IN PRODUCTION";
 			outputPaths = (

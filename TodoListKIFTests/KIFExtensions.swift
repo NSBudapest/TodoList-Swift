@@ -27,3 +27,11 @@ extension KIFTestActor {
         return KIFSystemTestActor(inFile: file, atLine: line, delegate: self)
     }
 }
+
+// Working around unrecognized selector crash from KIF
+// https://github.com/kif-framework/KIF/issues/827
+extension UIScreen {
+    func majorSwipeDisplacement() -> CGFloat {
+        return self.bounds.size.width * 0.625
+    }
+}

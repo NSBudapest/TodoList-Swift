@@ -34,7 +34,9 @@ class TodoListViewController: UITableViewController, TodoItemDelegate {
     }
     
     func insertNewItem(sender: AnyObject) {
-        // It should add a new item to the list
+        let indexPath = NSIndexPath(forRow: items.count, inSection: 0)
+        items.append("Anything else?")
+        self.tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: .Automatic)
     }
     
     // MARK: - Table View
