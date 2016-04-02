@@ -104,8 +104,8 @@
 		02D9569A1CAE85D800C627EE /* TodoListKIFTests */ = {
 			isa = PBXGroup;
 			children = (
-				02D956A41CAE861C00C627EE /* KIFExtensions.swift */,
 				02D9569D1CAE85D800C627EE /* Info.plist */,
+				02D956A41CAE861C00C627EE /* KIFExtensions.swift */,
 				02D956A31CAE861B00C627EE /* TodoListKIFTests-Bridging-Header.h */,
 				02D956AC1CAE874000C627EE /* TodoTableViewKIFTests.swift */,
 				02D956AE1CAE89AD00C627EE /* TodoViewKIFTests.swift */,
@@ -481,6 +481,7 @@
 				02D956A21CAE85D800C627EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
