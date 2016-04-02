@@ -12,7 +12,7 @@ Use Carthage for updating dependencies. If you don't have [Carthage](https://git
 
 Then go to your project's root and run:
 
-`carthage update --platform iOS`
+`carthage bootstrap --platform iOS`
 
 to have your dependencies installed.
 
