@@ -17,6 +17,7 @@
 		02D956A81CAE866A00C627EE /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D956A71CAE866A00C627EE /* KIF.framework */; };
 		02D956AD1CAE874000C627EE /* TodoTableViewKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D956AC1CAE874000C627EE /* TodoTableViewKIFTests.swift */; };
 		02D956AF1CAE89AD00C627EE /* TodoViewKIFTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D956AE1CAE89AD00C627EE /* TodoViewKIFTests.swift */; };
+		02D956B11CAFFC9B00C627EE /* KIF.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02D956A71CAE866A00C627EE /* KIF.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D956B11CAFFC9B00C627EE /* KIF.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +131,7 @@
 				02D956761CAE7D0600C627EE /* Sources */,
 				02D956771CAE7D0600C627EE /* Frameworks */,
 				02D956781CAE7D0600C627EE /* Resources */,
-				02D956AB1CAE86B000C627EE /* Copy Carthage frameworks */,
+				02D956B21CAFFCA400C627EE /* DONT DO THIS IN PRODUCTION */,
 			);
 			buildRules = (
 			);
@@ -233,19 +235,20 @@
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
-		02D956AB1CAE86B000C627EE /* Copy Carthage frameworks */ = {
+		02D956B21CAFFCA400C627EE /* DONT DO THIS IN PRODUCTION */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/myfile$(SRCROOT)/Carthage/Build/iOS/KIF.framework",
 			);
-			name = "Copy Carthage frameworks";
+			name = "DONT DO THIS IN PRODUCTION";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
