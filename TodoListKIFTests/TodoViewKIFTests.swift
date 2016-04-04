@@ -11,6 +11,7 @@ import XCTest
 class TodoViewKIFTests: XCTestCase {
     
     override func setUp() {
+        tester().tapViewWithAccessibilityLabel("Learn KIF 0")
         super.setUp()
     }
     
@@ -19,25 +20,29 @@ class TodoViewKIFTests: XCTestCase {
     }
     
     func testAlertPopUp() {
-        // This test should:
-        // 1. open an item
-        // 2. press done and see an alert
-        // 3. go back
+        tester().tapViewWithAccessibilityLabel("Done")
+        tester().waitForViewWithAccessibilityLabel("..you are done with Learn KIF?")
+        
+        // teardown:
+        tester().tapViewWithAccessibilityLabel("Cancel")
+        tester().tapViewWithAccessibilityLabel("Back")
+        tester().waitForViewWithAccessibilityLabel("tableView")
     }
     
     func testAlertPopUpAndPressOK() {
-        // This test should:
-        // 1. open an item
-        // 2. press done
-        // 3. select OK and see going back to list with the removed item not in being in it anymore
+        tester().tapViewWithAccessibilityLabel("Done")
+        tester().tapViewWithAccessibilityLabel("OK")
+        tester().waitForViewWithAccessibilityLabel("tableView")
     }
     
     func testAlertPopUpAndPressCancel() {
-        // This test should:
-        // 1. open an item
-        // 2. press done
-        // 3. select Cancel and see the same screen
-        // 4. go back
+        tester().tapViewWithAccessibilityLabel("Done")
+        tester().tapViewWithAccessibilityLabel("Cancel")
+        tester().waitForViewWithAccessibilityLabel("Description: Learn KIF")
+        
+        //teardown:
+        tester().tapViewWithAccessibilityLabel("Back")
+        tester().waitForViewWithAccessibilityLabel("tableView")
     }
-    
+
 }
