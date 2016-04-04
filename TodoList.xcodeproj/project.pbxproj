@@ -584,6 +584,7 @@
 				02D956C01CB021B600C627EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
