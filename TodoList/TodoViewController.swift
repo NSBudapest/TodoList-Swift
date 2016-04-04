@@ -23,6 +23,13 @@ class TodoViewController: UIViewController {
         todoLabel.text = todoItem
         todoLabel.accessibilityLabel = "Description: \(todoItem)"
         doneButton.accessibilityLabel = "Done"
+        
+        alert = UIAlertController(title: "Are you sure..", message:"..you are done with \(todoItem)?", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in
+            self.delegate?.deleteTodoItem(self.todoItem)
+            self.navigationController?.popViewControllerAnimated(true)
+            })
+        alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel) { _ in })
     }
     
     @IBAction func doneButtonPressed() {
